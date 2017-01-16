@@ -4,6 +4,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings({"MismatchedQueryAndUpdateOfCollection", "StringBufferReplaceableByString", "StringBufferMayBeStringBuilder", "unused"})
 class Invoice {
     private final List<LineItem> items = new ArrayList<>();
 
