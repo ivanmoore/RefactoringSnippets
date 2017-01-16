@@ -2,9 +2,13 @@ package com.oocode;
 
 import java.io.PrintStream;
 
-@SuppressWarnings({"unused", "FieldCanBeLocal", "WeakerAccess"})
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class HeadedLetter {
-    private final boolean isImportant = false; // or true ...
+    private final boolean isImportant;
+
+    public HeadedLetter(boolean isImportant) {
+        this.isImportant = isImportant;
+    }
 
     public void print(PrintStream stream) {
         stream.println("ACME Ltd");
